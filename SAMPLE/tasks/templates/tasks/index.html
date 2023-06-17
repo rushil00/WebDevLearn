@@ -5,11 +5,12 @@
     </head>
     <body>
         <ul>
-            {% for tasks in task%}
+            {% for task in tasks %}
             <li>       
                 {{task}}
             </li>
             {% endfor %}
         </ul>
+        <a href="{% url 'tasks:add' %}">ADD a new Task!</a>
     </body>
 </html>
